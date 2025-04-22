@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Fantasy Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="header">AI Fantasy Chat</div>
+  <div class="roles">
+    选择角色：
+    <button onclick="selectRole('Mia', this)">Mia</button>
+    <button onclick="selectRole('Aria', this)">Aria</button>
+    <button onclick="selectRole('Selene', this)">Selene</button>
+  </div>
+  <div id="chatBox" class="chat-box">
+    <p>请选择角色开始聊天...</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="输入内容后回车或点击发送..." />
+    <button onclick="sendMessage()">发送</button>
+  </div>
+  <script src="chatgpt.js"></script>
+</body>
+</html> 
